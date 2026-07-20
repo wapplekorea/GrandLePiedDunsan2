@@ -99,7 +99,15 @@
   #privacy-modal .pm-close{position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;font-size:22px;cursor:pointer;line-height:1}
   @media(max-width:600px){#privacy-modal .pm-box{padding:28px 20px}}
 
-</style>
+
+    /* F&B 2컬럼 모바일 대응 */
+    .grid-fb-main{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+    .grid-fb-sub{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px;}
+    @media(max-width:768px){
+      .grid-fb-main{grid-template-columns:1fr;gap:32px;}
+      .grid-fb-sub{grid-template-columns:1fr;gap:16px;}
+    }
+  </style>
 </head>
 <body>
   <div class="top"><div class="wrap"><span>그랑 르피에드 둔산 · 프리미엄 분양상담</span><span>분양가 · 관심타입 · 방문예약 문의 1599-8766</span></div></div>
@@ -146,7 +154,7 @@
 
     <section class="section" style="background:#0d0b08;">
       <div class="wrap">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+        <div class="grid-fb-main">
           <div>
             <div class="kicker">RESIDENTIAL F&amp;B</div>
             <h2 class="title" style="color:#fff;margin:14px 0 24px;">갤러리아가 직접 운영하는<br>프리미엄 조식 서비스</h2>
@@ -156,7 +164,7 @@
               갤러리아의 품격으로 완성한 Bespoke F&amp;B로
               매일의 식사가 미식 경험으로 격상됩니다.
             </p>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px;">
+            <div class="grid-fb-sub">
               <div style="border-left:3px solid var(--gold);padding-left:18px;">
                 <div class="kicker" style="margin-bottom:8px;">DAILY GOURMET</div>
                 <div style="color:rgba(255,255,255,.9);font-size:17px;font-weight:700;">프리미엄 조식 서비스</div>
