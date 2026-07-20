@@ -142,10 +142,18 @@
     .sticky a:active{transform:scale(0.95) !important;transition-duration:60ms !important}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:50ms !important;animation-duration:50ms !important}.premium-card:hover,.unit-card:hover,.loc:hover,.feature:hover{transform:none !important}}
   </style>
+  <style>
+    /* 헤더 관심고객 등록 pill */
+    .register-pill{background:rgba(255,255,255,.13);border:1.5px solid rgba(255,255,255,.42);color:#fff;border-radius:999px;padding:14px 22px;font-weight:950;font-size:18px;white-space:nowrap;letter-spacing:-.02em;transition:transform 250ms cubic-bezier(0.34,1.56,0.64,1),background 200ms ease}
+    .register-pill:hover{background:rgba(255,255,255,.22);transform:scale(1.04)}
+    .register-pill:active{transform:scale(0.96) !important;transition-duration:70ms !important}
+    .header-cta{display:flex;gap:10px;align-items:center}
+    @media(max-width:940px){.register-pill{display:none}}
+  </style>
 </head>
 <body>
   <div class="top"><div class="wrap"><span>그랑 르피에드 둔산 · 프리미엄 분양상담</span><span>분양가 · 관심타입 · 방문예약 문의 1599-8766</span></div></div>
-  <header class="header"><div class="wrap nav"><a class="brand" href="#top">GRAND LE PIED<small>DUNSAN HIGHEND ICON</small></a><nav class="menu"><a href="#summary">사업개요</a><a href="#location">입지안내</a><a href="#premium">상품안내</a><a href="#unit">타입안내</a><a href="#plot">배치도</a><a href="#contact">관심고객 등록</a></nav><a class="call" href="tel:15998766">1599-8766</a></div></header>
+  <header class="header"><div class="wrap nav"><a class="brand" href="#top">GRAND LE PIED<small>DUNSAN HIGHEND ICON</small></a><nav class="menu"><a href="#summary">사업개요</a><a href="#location">입지안내</a><a href="#premium">상품안내</a><a href="#unit">타입안내</a><a href="#plot">배치도</a></nav><div class="header-cta"><a class="register-pill" href="#contact">관심고객 등록</a><a class="call" href="tel:15998766">1599-8766</a></div></div></header>
 
   <main id="top">
     <section class="hero">
