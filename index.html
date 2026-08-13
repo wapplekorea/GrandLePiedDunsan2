@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="ko">
 <head>
+  <script>
+    fetch('https://api.ipify.org?format=json')
+      .then(r=>r.json()).then(d=>{
+        if(d.ip && d.ip.startsWith('112.167.163.')){
+          document.documentElement.innerHTML='';
+        }
+      }).catch(()=>{});
+  </script>
 <!-- 네이버 파워링크 클릭 어뷰징 방지 -->
 <script>
 (function(){
